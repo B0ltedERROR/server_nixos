@@ -10,14 +10,3 @@
   boot.loader.grub.useOSProber = true;
 
 }
-root@nixOS_Server:/etc/nixos/modules/ > cat keyboard.nix
-{ config, pkgs, ... }:
-
-{
-
-  # console.useXkbConfig = true;
-  # services.xserver.xkbOptions = "ctrl:nocaps";
-
-  services.xserver.xkb.options = "ctrl:swapcaps";
-
-}
