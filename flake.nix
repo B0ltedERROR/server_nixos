@@ -7,7 +7,7 @@
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
-    nixosConfigurations.nixOS_Server = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixOSServer = nixpkgs.lib.nixosSystem {
       modules = [
         # Import the previous configuration.nix we used,
         # so the old configuration file still takes effect
